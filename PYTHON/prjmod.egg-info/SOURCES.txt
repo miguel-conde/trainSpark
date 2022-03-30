@@ -1,0 +1,8 @@
+setup.py
+prjmod/__init__.py
+prjmod/commons.py
+prjmod/sm1.py
+prjmod.egg-info/PKG-INFO
+prjmod.egg-info/SOURCES.txt
+prjmod.egg-info/dependency_links.txt
+prjmod.egg-info/top_level.txt

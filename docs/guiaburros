@@ -1,0 +1,61 @@
+
+1) CREACIÓN DEL ENTORNO CONDA DEL PROYECTO
+
+C:\Users\mcondedesimon>conda create -n "trainSpark"
+
+C:\Users\mcondedesimon>conda activate trainSpark
+
+(trainSpark) C:\Users\mcondedesimon>conda install python=3.7
+
+(trainSpark) C:\Users\mcondedesimon>conda install numpy pandas scikit-learn matplotlib seaborn
+
+(trainSpark) C:\Users\mcondedesimon>conda install -c conda-forge jupyterhub jupyterlab nodejs nb_conda_kernels
+
+(trainSpark) C:\Users\mcondedesimon>conda install -c conda-forge openjdk pyspark
+
+# install pycaret
+(trainSpark) C:\Users\mcondedesimon>pip install pycaret
+
+# create notebook kernel
+(trainSpark) C:\Users\mcondedesimon>python -m ipykernel install --user --name trainSpark --display-name "trainSpark" 
+
+2) 2 opciones:
+
+2a) CREAMOS EL REPO, LO CLONAMOS, CREAMOS LA ESTRUCTURA DE CARPETAS DEL PROYECTO,
+COMMIT Y PUSH
+
+(trainSpark) C:\Users\mcondedesimon\Documents>cd PLAYGROUND
+
+(trainSpark) C:\Users\mcondedesimon\Documents\PLAYGROUND>mkdir trainSpark
+
+(trainSpark) C:\Users\mcondedesimon\Documents\PLAYGROUND>cd trainSpark
+
+(trainSpark) C:\Users\mcondedesimon\Documents\PLAYGROUND\trainSpark>git clone https://github.com/miguel-conde/trainSpark.git .
+
+
+
+2b) CREAMOS LA ESTRUCTURA DE CARPETAS DEL PROYECTO, CREAMOS EL REPO A PARTIR DE 
+ELLA
+
+OJO YAML del conda environment
+
+3) PREPARAMOS ENTORNO PYTHON
+
+- Paquete del proyecto - setup.py - __init__.py
+
+(trainSpark) C:\Users\mcondedesimon\Documents\PLAYGROUND>cd trainSpark/PYTHON
+
+(trainSpark) C:\Users\mcondedesimon\Documents\PLAYGROUND\trainSpark\PYTHON>python -m pip install -e .
+
+- Dentro del paquete: commons.py
+
+
+- Instalamos el paquete del proyecto
+
+# https://medium.com/analytics-vidhya/data-directory-in-jupyter-notebooks-dc46cd79eb2f
+#
+# python -m pip install -e .
+#
+# Tb: 
+#       - https://pythonhosted.org/an_example_pypi_project/setuptools.html
+#       - https://godatadriven.com/blog/a-practical-guide-to-using-setup-py/
