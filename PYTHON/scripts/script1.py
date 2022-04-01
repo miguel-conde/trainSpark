@@ -5,6 +5,4 @@ pm.fun1()
 
 pm.fun2()
 
-
-
 print(commons.DIR_DATA)

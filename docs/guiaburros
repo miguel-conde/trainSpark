@@ -37,7 +37,8 @@ COMMIT Y PUSH
 2b) CREAMOS LA ESTRUCTURA DE CARPETAS DEL PROYECTO, CREAMOS EL REPO A PARTIR DE 
 ELLA
 
-OJO YAML del conda environment
+OJO YAML del conda environment:
+(trainSpark) C:\Users\mcondedesimon\Documents\PLAYGROUND\trainSpark>conda env export > environment.yml
 
 3) PREPARAMOS ENTORNO PYTHON
 

@@ -7,7 +7,9 @@ DIR_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
 DIR_DATA = os.path.join(DIR_ROOT, "data")   
 
 DIR_DL =  os.path.join(DIR_DATA, "datalake")
-DL_FILE_FLIGHTS = os.path.join(DIR_DL, "flights.csv")
+DL_FILE_FLIGHTS   = os.path.join(DIR_DL, "flights.csv")
+DL_FILE_PLANES    = os.path.join(DIR_DL, "planes.csv")
+DL_FILE_AIRPORTS  = os.path.join(DIR_DL, "airports.csv")
 
 DIR_DW =  os.path.join(DIR_DATA, "datawarehouse")
 
